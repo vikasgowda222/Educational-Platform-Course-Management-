@@ -1,0 +1,151 @@
+# Educational Platform Learning Website 🌐  
+
+Welcome to the official repository of ** Educational Learning Website! This project serves as the digital presence of  Edu Learning , showcasing our services, portfolio, and capabilities in web development and design.
+
+---
+
+## 🚀 Features  
+- **Landing Page**: A visually appealing and informative home page designed to captivate visitors.  
+- **CMS Integration**: Dynamic and easy-to-manage content for a seamless user experience.  
+- **UI/UX Design**: Sleek, modern, and user-centric interface and experience.  
+- **E-Commerce Functionality**: Comprehensive online store setup to drive sales.
+- **Payment Modes**: Secure and flexible payment gateways for seamless transactions.  
+- **Chatbot Integration**: AI-powered chatbot for 24/7 customer support and engagement. 
+
+---
+## 🛠️ Technologies Used  
+- **Frontend**: HTML5, CSS3, JavaScript (with Django Template Engine)  
+- **Backend**: Python, Django Web Framework  
+- **Database**: SQLite (development), MySQL (for production)  
+- **Version Control**: Git & GitHub for source code management  
+- **Environment Management**: Python `venv` (virtual environment)  
+- **Deployment**: Gunicorn/uWSGI with Nginx (for production)
+
+---
+
+## 📂 Project Structure  
+```
+courseapp/
+├── courseapp/                # Main Django project folder (contains settings, urls, etc.)
+│   ├── __init__.py
+│   ├── asgi.py
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+├── edusmart/                 # Django application for course management
+│   ├── migrations/           # Database migrations
+│   ├── templates/            # HTML templates
+│   │   ├── base.html         # Base layout
+│   │   ├── index.html        # Homepage template
+│   │   └── about.html        # About page template
+│   ├── static/               # CSS, JS, images
+│   │   ├── css/
+│   │   ├── js/
+│   │   └── images/
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── tests.py
+│   ├── urls.py              # App-level URL config
+│   └── views.py
+├── db.sqlite3                # SQLite database
+├── manage.py                 # Django management script
+├── requirements.txt          # Project dependencies
+└── README.md                 # Project documentation
+
+
+---
+
+## 📖 Getting Started  
+
+### Prerequisites  
+Ensure you have the following installed on your machine:  
+- Python 
+- Github
+- Git
+
+# Course Management - Installation and Setup Guide
+
+## ✅ Installation
+
+### Clone the repository:
+
+```bash
+
+Navigate to the project directory:
+cd Course-Management
+
+## 🚀 Run Development Server
+Start the Django development server:
+python manage.py runserver
+
+Visit your app at:
+http://127.0.0.1:8000/
+
+## ⚙️ Migrate Database
+Before first run, apply migrations:
+python manage.py migrate
+
+```
+ You will Face the problem in __pycache__ while commiting your work , the reason is , when you are trying to push your work or commit your work to repo, this whill hit error of not saved your work, because this files changes continuosly to it will better to tell git that you have to ignore this file and commit other works.
+
+ Following steps will shows how will you achieve this:
+ 1. Add __pycache__/ to .gitignore
+ : echo __pycache__/ >> .gitignore
+2. Remove pycache from Git tracking
+: git rm --cached -r courseapp/courseapp/__pycache__/
+3. Commit the change
+: git add .gitignore
+: git commit -m "Ignore __pycache__ files"
+4. Check status again
+: git status
+
+Just copy paste the commands in cmd. 
+
+Now git will ignore this files and commit other remaining works.   
+---
+
+## 🖼️ Screenshots  
+_Showcase of website with screenshots._  
+
+### Landing Page  
+![Screenshot of Landing Page](img/assets/frontend.png)
+
+### About InternVision Tech Page  
+![Screenshot of About InternVision Tech Page  ](img/assets/about.png)
+
+### Blogs & Updates Page  
+![Screenshot of Blogs ](img/assets/blogs.png)
+
+### Services Page  
+![Screenshot of Services ](img/assets/services.png)
+
+### Projects Page  
+![Screenshot of Projects ](img/assets/projects.png)
+
+### Contact us Page  
+![Screenshot of Contact us ](img/assets/contact.png)
+
+### Internships Page  
+![Screenshot of Internships ](img/assets/internships.png)
+
+### Footer Page  
+![Screenshot of Footer ](img/assets/footer.png)
+
+
+---
+
+## 🤝 Contributing  
+We welcome contributions! If you'd like to contribute, please fork the repository and use a feature branch. Pull requests are warmly welcome.  
+
+---
+
+## 📧 Contact  
+For any queries, reach out to us at:  
+- **Email**: vikasgowdas222@gail.com
+
+---
+
+---
+
+
